@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title> 글자커팅 셀프 계산기</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&family=Orbitron&display=swap" rel="stylesheet">
- <style>
+<meta charset="utf-8"/>
+<title> 글자커팅 셀프 계산기</title>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;family=Noto+Sans+KR&amp;family=Orbitron&amp;display=swap" rel="stylesheet"/>
+<style>
 
 @font-face {
   font-family: '어그로';
@@ -125,8 +126,9 @@
 }
 
 반응형 조정: 최대 480px 너비 이하일 때 적용 */
+
 @media (max-width: 480px) {
-  body {
+    body {
     font-size: 14px;
     padding: 10px;
   }
@@ -207,9 +209,9 @@
 }
 
     body {
+     max-width: 800px;
       font-family: 'Noto Sans KR', sans-serif;
       padding: 20px;
-      max-width: 800px;
       margin: auto;
       background: #f5f5f5;
     }
@@ -290,20 +292,22 @@
       font-size: 24px;
     }
   </style>
-</head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/><style>
+  html, body {
+
+    overflow-x: hidden;
+  }
+</style></head>
 <body>
-  <h1>ZZS X 우주데칼 글자커팅 셀프계산</h1><center><a href="https://mkt.shopping.naver.com/link/683f9e59b7c8c573b305db60" target='_blank'>클릭하여 글자커팅 상품 바로가기 (새 탭)</a></p>
-
-  <div class="section">
-    <div class="row">
-      <label>1. 문구 입력</label>
-
-<input type="text" id="inputText" style="font-size: 1.5em;" placeholder="내용을 입력해주세요. -by zzshop.co.kr" />
-    </div>
-
-    <div class="row">
-      <label>2. 글씨체 선택</label>
-      <select id="fontFamily">
+<h1>ZZS X 우주데칼 글자커팅 셀프계산</h1><center><a href="https://mkt.shopping.naver.com/link/683f9e59b7c8c573b305db60" target="_blank">클릭하여 글자커팅 상품 바로가기 (새 탭)</a>
+<div class="section">
+<div class="row">
+<label>1. 문구 입력</label>
+<input id="inputText" placeholder="내용을 입력해주세요." style="font-size: 1.3em;" type="text"/>
+</div>
+<div class="row">
+<label>2. 글씨체 선택</label>
+<select id="fontFamily">
 <option value="나눔스퀘어네오">나눔스퀘어네오</option>
 <option value="어그로">어그로체</option>
 <option value="이사만루체">이사만루체</option>
@@ -312,183 +316,174 @@
 <option value="Rix열정도체">Rix열정도체</option>
 <option value="Rix이누아리두리네">Rix이누아리두리네</option>
 <option value="신촌랩소디체">신촌랩소디체</option>
-
 <option value="더잠실체">더잠실체</option>
 <option value="티몬체">티몬체</option>
 <option value="원스토어 모바일POP체">원스토어 모바일POP체</option>
-
 <option value="티머니둥근바람">티머니둥근바람</option>
 <option value="넥슨메이플스토리">넥슨메이플스토리</option>
 <option value="학교안심알림장">학교안심알림장</option>
-
 <option value="태나다체">태나다체</option>
 <option value="을지로체">을지로체</option>
 <option value="TT투게더">TT투게더</option>
 <option value="자이언츠체">자이언츠체</option>
 <option value="KCC간판체">KCC간판체</option>
-      </select>
-    </div>
-    <div class="row inline-group">
-      <label>3. 시트컬러</label>
-      <select id="color">
-  <optgroup label="■ 일반컬러 PVC" data-rate="1">
-    <option value="1">하얀색</option>
-    <option value="1">검정색</option>
-    <option value="1">빨간색</option>
-    <option value="1">노란색</option>
-    <option value="1">파란색</option>
-    <option value="1">초록색</option>
-  </optgroup>
-  <optgroup label="■ 특수컬러 PVC" data-rate="1.2">
-    <option value="1.2">반광금색</option>
-    <option value="1.2">반광은색</option>
-  </optgroup>
-  <optgroup label="■ 특수컬러 PET" data-rate="1.2">
-    <option value="1.2">홀로그램 PET</option>
-    <option value="1.2">골드 헤어라인</option>
-    <option value="1.2">실버 헤어라인</option>
-    <option value="1.2">미러 골드</option>
-    <option value="1.2">미러 실버</option>
-  </optgroup>
-  <optgroup label="■ 특수컬러 랩핑지" data-rate="2">
-    <option value="2">홀로그램 PVC</option>
-    <option value="2">블랙홀로그램</option>
-  </optgroup>
-  <optgroup label="■ 반사시트지" data-rate="1.5">
-    <option value="1.5">반사 빨강</option>
-    <option value="1.5">반사 노랑</option>
-    <option value="1.5">반사 주황</option>
-    <option value="1.5">반사 초록</option>
-    <option value="1.5">반사 파랑</option>
-    <option value="1.5">반사 흰색</option>
-  </optgroup>
 </select>
-      <label>4. 글자 높이</label>
-      <input type="number" id="fontSize" value="3" min="3" /> cm
+</div>
+<div class="row inline-group">
+<label>3. 시트컬러</label>
+<select id="color">
+<optgroup data-rate="1" label="■ 일반컬러 PVC">
+<option value="1">하얀색</option>
+<option value="1">검정색</option>
+<option value="1">빨간색</option>
+<option value="1">노란색</option>
+<option value="1">파란색</option>
+<option value="1">초록색</option>
+</optgroup>
+<optgroup data-rate="1.2" label="■ 특수컬러 PVC">
+<option value="1.2">반광금색</option>
+<option value="1.2">반광은색</option>
+</optgroup>
+<optgroup data-rate="1.2" label="■ 특수컬러 PET">
+<option value="1.2">홀로그램 PET</option>
+<option value="1.2">골드 헤어라인</option>
+<option value="1.2">실버 헤어라인</option>
+<option value="1.2">미러 골드</option>
+<option value="1.2">미러 실버</option>
+</optgroup>
+<optgroup data-rate="2" label="■ 특수컬러 랩핑지">
+<option value="2">홀로그램 PVC</option>
+<option value="2">블랙홀로그램</option>
+</optgroup>
+<optgroup data-rate="1.5" label="■ 반사시트지">
+<option value="1.5">반사 빨강</option>
+<option value="1.5">반사 노랑</option>
+<option value="1.5">반사 주황</option>
+<option value="1.5">반사 초록</option>
+<option value="1.5">반사 파랑</option>
+<option value="1.5">반사 흰색</option>
+</optgroup>
+</select>
+<label>4. 글자 높이</label>
+<input id="fontSize" min="3" type="number" value="3"/> cm
       <label>5. 주문 수량</label>
-      <input type="number" id="orderQty" value="1" min="1" /> 개
+<input id="orderQty" min="1" type="number" value="1"/> 개
     </div>
-    <div class="icon-section">
-      <div><strong>5. 글씨 앞쪽 아이콘 추가</strong></div>
-      <div class="checkbox-row">
-        <label class="icon-box"><input type="checkbox" class="icon-check">   <!-- SVG 01 -->
-  <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 141.73 141.73" width="25" heith="auto">
-  <defs>
-    <style>
+<div class="icon-section">
+<div><strong>5. 글씨 앞쪽 아이콘 추가</strong></div>
+<div class="checkbox-row">
+<label class="icon-box"><input class="icon-check" type="checkbox"/> <!-- SVG 01 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="레이어_1" height="auto" id="_레이어_1" version="1.1" viewbox="0 0 141.73 141.73" width="25" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
       .st0 {
         fill: #231815; 
       }
     </style>
-  </defs>
-  <path class="st0" d="M91.17,8.26h-40.61c-11.49,0-20.84,9.35-20.84,20.84v83.55c0,11.49,9.35,20.84,20.84,20.84h40.61c11.49,0,20.84-9.35,20.84-20.84V29.09c0-11.49-9.35-20.84-20.84-20.84ZM104.1,112.64c0,7.14-5.79,12.93-12.93,12.93h-40.61c-7.14,0-12.93-5.79-12.93-12.93V29.09c0-7.14,5.79-12.93,12.93-12.93h40.61c7.14,0,12.93,5.79,12.93,12.93v83.54Z" />
-  <circle class="st0" cx="70.87" cy="109.02" r="8.19"/>
-  <rect class="st0" x="44.28" y="24.55" width="53.17" height="69.1" rx="9.12" ry="9.12"/ >
-</svg>
+</defs>
+<path class="st0" d="M91.17,8.26h-40.61c-11.49,0-20.84,9.35-20.84,20.84v83.55c0,11.49,9.35,20.84,20.84,20.84h40.61c11.49,0,20.84-9.35,20.84-20.84V29.09c0-11.49-9.35-20.84-20.84-20.84ZM104.1,112.64c0,7.14-5.79,12.93-12.93,12.93h-40.61c-7.14,0-12.93-5.79-12.93-12.93V29.09c0-7.14,5.79-12.93,12.93-12.93h40.61c7.14,0,12.93,5.79,12.93,12.93v83.54Z"></path>
+<circle class="st0" cx="70.87" cy="109.02" r="8.19"></circle>
+<rect class="st0" height="69.1" rx="9.12" ry="9.12" width="53.17" x="44.28" y="24.55">
+</rect></svg>
  전화기</label>
-        <label class="icon-box"><input type="checkbox" class="icon-check"> <!-- SVG 02 -->
-  <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 141.73 141.73"  width="25" heith="auto">
-  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
-  <defs>
-    <style>
+<label class="icon-box"><input class="icon-check" type="checkbox"/> <!-- SVG 02 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="레이어_1" height="auto" id="_레이어_1" version="1.1" viewbox="0 0 141.73 141.73" width="25" xmlns="http://www.w3.org/2000/svg">
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+<defs>
+<style>
       .st0 {
         fill: #231815;
       }
     </style>
-  </defs>
-  <path class="st0" d="M135.02,57.5c-.48-7.3-.57-16.64-5.34-24.14-2.22-2.92-6-5.19-10.03-5.95-5.04-.96-26.56-1.71-48.74-1.71s-43.7.76-48.74,1.71c-3.23.6-6.1,2.06-8.57,4.33-5.23,4.85-5.61,13.16-6.4,20.16-.95,12.68-.77,24.02,0,37.9.5,6.15.86,8.67,1.76,11.69,1.06,3.63,2.42,6.25,4.13,7.97,2.22,2.27,5.24,3.83,8.72,4.53,5.14,1.06,13.51,1.47,38,1.92h0c20.43.33,38.43-.02,59.62-1.61,3.39-.58,6.52-2.18,8.97-4.59,1.57-1.56,2.47-2.97,3.53-5.65,1.71-4.23,2.32-8.32,3.07-19.86.2-3.48.2-23.23,0-26.71ZM57.61,87.59v-36.19s.03.02.05.03v-.08c11.54,6.05,22.82,11.89,34.61,18.18,0,0-.01,0-.02.01h.04c-9.73,5.39-22.53,11.44-34.68,18.04Z"/>
+</defs>
+<path class="st0" d="M135.02,57.5c-.48-7.3-.57-16.64-5.34-24.14-2.22-2.92-6-5.19-10.03-5.95-5.04-.96-26.56-1.71-48.74-1.71s-43.7.76-48.74,1.71c-3.23.6-6.1,2.06-8.57,4.33-5.23,4.85-5.61,13.16-6.4,20.16-.95,12.68-.77,24.02,0,37.9.5,6.15.86,8.67,1.76,11.69,1.06,3.63,2.42,6.25,4.13,7.97,2.22,2.27,5.24,3.83,8.72,4.53,5.14,1.06,13.51,1.47,38,1.92h0c20.43.33,38.43-.02,59.62-1.61,3.39-.58,6.52-2.18,8.97-4.59,1.57-1.56,2.47-2.97,3.53-5.65,1.71-4.23,2.32-8.32,3.07-19.86.2-3.48.2-23.23,0-26.71ZM57.61,87.59v-36.19s.03.02.05.03v-.08c11.54,6.05,22.82,11.89,34.61,18.18,0,0-.01,0-.02.01h.04c-9.73,5.39-22.53,11.44-34.68,18.04Z"></path>
 </svg>
  유튜브</label>
-        <label class="icon-box"><input type="checkbox" class="icon-check"> <!-- SVG 03 -->
-  <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 141.73 141.73" width="25" heith="auto">
-  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
-  <defs>
-    <style>
+<label class="icon-box"><input class="icon-check" type="checkbox"/> <!-- SVG 03 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="레이어_1" height="auto" id="_레이어_1" version="1.1" viewbox="0 0 141.73 141.73" width="25" xmlns="http://www.w3.org/2000/svg">
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+<defs>
+<style>
       .st0 {
         fill: #231815;
       }
     </style>
-  </defs>
-  <path class="st0" d="M96.06,6.56h-50.38C24.07,6.56,6.56,24.07,6.56,45.68v50.38c0,21.6,17.51,39.12,39.12,39.12h50.38c21.6,0,39.12-17.51,39.12-39.12v-50.38c0-21.6-17.51-39.12-39.12-39.12ZM123.23,95.08c0,15.55-12.6,28.15-28.15,28.15h-48.42c-15.55,0-28.15-12.6-28.15-28.15v-48.42c0-15.55,12.6-28.15,28.15-28.15h48.42c15.55,0,28.15,12.6,28.15,28.15v48.42Z"/>
-  <path class="st0" d="M104.73,28.86c-4.22,0-7.65,3.42-7.65,7.65s3.42,7.65,7.65,7.65,7.65-3.42,7.65-7.65-3.42-7.65-7.65-7.65Z"/>
-  <path class="st0" d="M70.87,38.6c-17.82,0-32.27,14.45-32.27,32.27s14.45,32.27,32.27,32.27,32.27-14.45,32.27-32.27-14.45-32.27-32.27-32.27ZM70.87,92.81c-12.1,0-21.94-9.84-21.94-21.94s9.84-21.94,21.94-21.94,21.94,9.84,21.94,21.94-9.84,21.94-21.94,21.94Z"/>
+</defs>
+<path class="st0" d="M96.06,6.56h-50.38C24.07,6.56,6.56,24.07,6.56,45.68v50.38c0,21.6,17.51,39.12,39.12,39.12h50.38c21.6,0,39.12-17.51,39.12-39.12v-50.38c0-21.6-17.51-39.12-39.12-39.12ZM123.23,95.08c0,15.55-12.6,28.15-28.15,28.15h-48.42c-15.55,0-28.15-12.6-28.15-28.15v-48.42c0-15.55,12.6-28.15,28.15-28.15h48.42c15.55,0,28.15,12.6,28.15,28.15v48.42Z"></path>
+<path class="st0" d="M104.73,28.86c-4.22,0-7.65,3.42-7.65,7.65s3.42,7.65,7.65,7.65,7.65-3.42,7.65-7.65-3.42-7.65-7.65-7.65Z"></path>
+<path class="st0" d="M70.87,38.6c-17.82,0-32.27,14.45-32.27,32.27s14.45,32.27,32.27,32.27,32.27-14.45,32.27-32.27-14.45-32.27-32.27-32.27ZM70.87,92.81c-12.1,0-21.94-9.84-21.94-21.94s9.84-21.94,21.94-21.94,21.94,9.84,21.94,21.94-9.84,21.94-21.94,21.94Z"></path>
 </svg>
  인스타</label>
-        <label class="icon-box"><input type="checkbox" class="icon-check">  <!-- SVG 04 -->
-  <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 141.73 141.73" width="25" heith="auto">
-  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
-  <defs>
-    <style>
+<label class="icon-box"><input class="icon-check" type="checkbox"/> <!-- SVG 04 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="레이어_1" height="auto" id="_레이어_1" version="1.1" viewbox="0 0 141.73 141.73" width="25" xmlns="http://www.w3.org/2000/svg">
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+<defs>
+<style>
       .st0 {
         fill: #231815;
       }
     </style>
-  </defs>
-  <path class="st0" d="M97.48,6.56h-53.22C23.44,6.56,6.56,23.44,6.56,44.25v53.22c0,20.82,16.88,37.7,37.7,37.7h53.22c20.82,0,37.7-16.88,37.7-37.7v-53.22c0-20.82-16.88-37.7-37.7-37.7ZM107.9,107.75h-22.78l-27.48-39.09v39.09h-23.81V33.98h22.92l27.33,39.09v-39.09h23.81v73.77Z"/>
+</defs>
+<path class="st0" d="M97.48,6.56h-53.22C23.44,6.56,6.56,23.44,6.56,44.25v53.22c0,20.82,16.88,37.7,37.7,37.7h53.22c20.82,0,37.7-16.88,37.7-37.7v-53.22c0-20.82-16.88-37.7-37.7-37.7ZM107.9,107.75h-22.78l-27.48-39.09v39.09h-23.81V33.98h22.92l27.33,39.09v-39.09h23.81v73.77Z"></path>
 </svg>
  네이버</label>
-        <label class="icon-box"><input type="checkbox" class="icon-check"> <!-- SVG 05 -->
-  <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 141.73 141.73" width="25" heith="auto">
-  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
-  <defs>
-    <style>
+<label class="icon-box"><input class="icon-check" type="checkbox"/> <!-- SVG 05 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-name="레이어_1" height="auto" id="_레이어_1" version="1.1" viewbox="0 0 141.73 141.73" width="25" xmlns="http://www.w3.org/2000/svg">
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+<defs>
+<style>
       .st0 {
         fill: #040000;
       }
     </style>
-  </defs>
-  <path class="st0" d="M70.87,112.93c-3.9,0-7.72-.27-11.42-.8-3.71,2.61-25.15,17.67-27.17,17.96,0,0-.83.32-1.54-.09-.71-.42-.58-1.51-.58-1.51.21-1.45,5.56-19.91,6.54-23.3-18.11-8.97-30.14-24.86-30.14-42.96,0-28,28.79-50.7,64.31-50.7s64.31,22.7,64.31,50.7-28.79,50.7-64.31,50.7Z"/>
+</defs>
+<path class="st0" d="M70.87,112.93c-3.9,0-7.72-.27-11.42-.8-3.71,2.61-25.15,17.67-27.17,17.96,0,0-.83.32-1.54-.09-.71-.42-.58-1.51-.58-1.51.21-1.45,5.56-19.91,6.54-23.3-18.11-8.97-30.14-24.86-30.14-42.96,0-28,28.79-50.7,64.31-50.7s64.31,22.7,64.31,50.7-28.79,50.7-64.31,50.7Z"></path>
 </svg>
  카카오</label>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <h3 style="margin: 0;">계산 결과 펼쳐보기</h3>
-    <button id="toggleCalc" style="border: none; background: none; font-size: 1.5em; cursor: pointer;">▼</button>
-  </div>
-
-  <div id="calculationSection" style="display: none;">
-    <div class="row">
-      <label>한글 개수</label>
-      <input type="number" id="countKor" readonly />
-      <span style="display:none;">단가 <span id="unitKor">0</span>원 → </span>총 <span id="totalKor">0</span>원</span>
-    </div>
-    <div class="row">
-      <label>영문/숫자/기호</label>
-      <input type="number" id="countEng" readonly />
-      <span style="display:none;">단가 <span id="unitEng">0</span>원 → </span>총 <span id="totalEng">0</span>원</span>
-    </div>
-    <div class="row">
-      <label>한문 / 로고</label>
-      <input type="number" id="countHan" readonly />
-      <span style="display:none;">단가 <span id="unitHan">0</span>원 → </span>총 <span id="totalHan">0</span>원</span>
-    </div>
-
-    <div class="result-box" style="margin-top: 15px;">
-      <div>1매당 <span id="unitPrice">0</span> 원 / 수량 합계 <span id="totalPrice">0</span> 원</div>
-    </div>
-  </div>
 </div>
-
-  <div class="section">
-    <div class="result-box">
-      <div>현재 계산 주문 수량 <span class="highlight" id="finalQty">0</span> 개<br>반드시 추가 후 전송 해주세요.</div>
-    </div>
-  </div>
-
+</div>
+</div>
+<div class="section">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<h3 style="margin: 0;">계산 결과 펼쳐보기</h3>
+<button id="toggleCalc" style="border: none; background: none; font-size: 1.5em; cursor: pointer;">▼</button>
+</div>
+<div id="calculationSection" style="display: none;">
+<div class="row">
+<label>한글 개수</label>
+<input id="countKor" readonly="" type="number">
+<span style="display:none;">단가 <span id="unitKor">0</span>원 → </span>총 <span id="totalKor">0</span>원
+</input></div>
+<div class="row">
+<label>영문/숫자/기호</label>
+<input id="countEng" readonly="" type="number">
+<span style="display:none;">단가 <span id="unitEng">0</span>원 → </span>총 <span id="totalEng">0</span>원
+</input></div>
+<div class="row">
+<label>한문 / 로고</label>
+<input id="countHan" readonly="" type="number">
+<span style="display:none;">단가 <span id="unitHan">0</span>원 → </span>총 <span id="totalHan">0</span>원
+</input></div>
+<div class="result-box" style="margin-top: 15px;">
+<div>1매당 <span id="unitPrice">0</span> 원 / 수량 합계 <span id="totalPrice">0</span> 원</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="result-box">
+<div>현재 계산 주문 수량 <span class="highlight" id="finalQty">0</span> 개<br/>반드시 추가 후 전송 해주세요.</div>
+</div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   emailjs.init("sG0jFKvN_R_IYK4EQ"); // Public key 넣기
 </script>
-
-  <script>
+<script>
 function countCharacters(text) {
   const korean = (text.match(/[\uAC00-\uD7A3\u3131-\u3163]/g) || []).length;
 
@@ -716,8 +711,8 @@ function renderSavedList() {
   문구가 입력되지 않았습니다.
 </div>
 <div class="section">
- <div class="row" style="justify-content: center; gap: 20px;">
-  <button id="addButton" style="
+<div class="row" style="justify-content: center; gap: 20px;">
+<button id="addButton" style="
     font-size: 1.5em;
     padding: 10px 20px;
     border-radius: 8px;
@@ -728,8 +723,7 @@ function renderSavedList() {
   ">
     ➕ 추가
   </button>
-
-  <button id="sendButton" style="
+<button id="sendButton" style="
     font-size: 1.5em;
     padding: 10px 20px;
     border-radius: 8px;
@@ -742,20 +736,19 @@ function renderSavedList() {
   </button>
 </div>
 </div>
-
 <div class="section">
-  <div class="row">
-    <label for="customerName">주문인 성명<br></label>
-    <input type="text" id="customerName" placeholder="수령인X 주문인과 이름 매치가 안되면 주문 접수가 안됩니다." />
-  </div>
-<a href="https://mkt.shopping.naver.com/link/683f9e59b7c8c573b305db60" target='_blank'>클릭하여 글자커팅 상품 바로가기 (새 탭)<br>전송 후 이 총 수량 갯수를 기억하시고 클릭.</a>
+<div class="row">
+<label for="customerName">주문인 성명<br/></label>
+<input id="customerName" placeholder="수령인X 주문인과 이름 매치가 안되면 주문 접수가 안됩니다." type="text">
+</input></div>
+<a href="https://mkt.shopping.naver.com/link/683f9e59b7c8c573b305db60" target="_blank">클릭하여 글자커팅 상품 바로가기 (새 탭)<br/>전송 후 이 총 수량 갯수를 기억하시고 클릭.</a>
 <h3 style="display: flex; justify-content: space-between; align-items: center;">
-  <span>📝 저장 목록</span>
-  <span style="font-size: 1.5em; color: #444; text-align: right;">
+<span>📝 저장 목록</span>
+<span style="font-size: 1.5em; color: #444; text-align: right;">
     총 수량: 
     <span id="savedQtyValue" style="color: red; font-weight: bold; font-size: 2em;">0</span>개
   </span>
 </h3><ul id="savedList" style="padding-left: 20px;"></ul>
 </div>
-</body>
+</center></body>
 </html>
