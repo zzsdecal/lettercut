@@ -125,8 +125,6 @@
   src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
 }
 
-반응형 조정: 최대 480px 너비 이하일 때 적용 */
-
 @media (max-width: 480px) {
     body {
     font-size: 14px;
@@ -491,7 +489,6 @@
 function countCharacters(text) {
   const korean = (text.match(/[\uAC00-\uD7A3\u3131-\u3163]/g) || []).length;
 
-  // 확장 한자까지 포함
   const hanjaMatches = [...text.matchAll(/[\u4E00-\u9FFF\u3400-\u4DBF]|\p{Script=Han}/gu)];
   const hanja = hanjaMatches.length;
 
@@ -553,7 +550,6 @@ function calculateTotal() {
       });
     });
 
-// 시트컬러 변경 시에도 계산 반영
 document.getElementById('color').addEventListener('change', calculateTotal);
 
     document.querySelectorAll('.icon-check').forEach(el => {
