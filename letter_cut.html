@@ -327,9 +327,9 @@
 <option value="KCC간판체">KCC간판체</option>
 </select>
 </div>
-  <div class="column">
-<label>원하는 글씨체가 없다면 주문자 성함 란에 요청글씨체 이름을 써주세요. 적용 불가할 경우 안내 드리겠습니다. <br>서체 사이트 : <a href="http://noonnu.cc" target="_blank">한글 폰트 많은 눈누 (새 창)</a> / <a href="https://fontmeme.com/ktype/free-fonts/" target="_blank">영문서체 많은 FONTMEME (새 창)</a></label>
-</select>
+  <div>
+<label>원하는 글씨체가 없다면 주문자 성함 란에 요청글씨체 이름을 써주세요. 적용 불가할 경우 안내 드리겠습니다. <br>
+  서체 사이트 : <a href="http://noonnu.cc" target="_blank">한글 폰트 많은 눈누 (새 창)</a> / <a href="https://fontmeme.com/ktype/free-fonts/" target="_blank">영문서체 많은 FONTMEME (새 창)</a></label>
 </div>
 <div class="row inline-group">
 <label>3. 시트컬러</label>
@@ -601,7 +601,7 @@ document.getElementById('addButton').addEventListener('click', () => {
     글자높이: `${height}cm`,
     입력수량: qty,
     주문수량: finalQty,
-    아이콘: selectedIcons.join(', ') || 'noIcon'
+    아이콘: selectedIcons.join(', ') || '아이콘없음'
   };
 
   savedItems.push(item);
